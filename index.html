@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>🐔 نظام عبدالله عزوز | تحليل ذكي لإناث روص 308</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', 'Tahoma', sans-serif; }
+        body { background: linear-gradient(135deg, #0d2e1a 0%, #1a4a2e 50%, #2d6a4f 100%); min-height: 100vh; padding: 15px 10px; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .designer-signature { background: linear-gradient(135deg, #ffd700, #ffaa00); color: #0a2a1e; text-align: center; padding: 12px 15px; border-radius: 50px; font-weight: bold; margin-bottom: 15px; display: flex; flex-direction: column; gap: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); border: 2px solid #fff; }
+        @media (min-width: 768px) { .designer-signature { flex-direction: row; justify-content: space-between; align-items: center; padding: 12px 25px; } }
+        .designer-name { font-size: 1.2rem; letter-spacing: 1px; }
+        .designer-contact { font-size: 1rem; direction: ltr; }
+        @media (min-width: 768px) { .designer-name { font-size: 1.5rem; } .designer-contact { font-size: 1.2rem; } }
+        .trend-header { background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 15px; margin-bottom: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
+        .risk-meter { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .risk-label { font-size: 1rem; font-weight: bold; color: #0a2a1e; width: 100%; }
+        @media (min-width: 768px) { .risk-label { width: auto; font-size: 1.2rem; } }
+        .risk-bar-container { flex: 1; min-width: 150px; height: 30px; background: #e0e0e0; border-radius: 15px; overflow: hidden; }
+        .risk-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #4caf50, #ffeb3b, #ff9800, #f44336); border-radius: 15px; transition: width 0.5s ease; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; color: white; font-weight: bold; font-size: 0.9rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+        .risk-value { font-size: 2rem; font-weight: bold; text-align: center; color: #c62828; min-width: 70px; }
+        .history-bar { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; align-items: center; }
+        .history-btn { background: #e8f5e9; border: none; padding: 6px 12px; border-radius: 20px; cursor: pointer; font-weight: bold; color: #1a4a2e; border: 1px solid #1a4a2e; font-size: 0.8rem; }
+        .header { background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 20px 15px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); display: flex; flex-direction: column; gap: 15px; }
+        @media (min-width: 768px) { .header { flex-direction: row; justify-content: space-between; align-items: center; } }
+        .header h1 { color: #0a2a1e; font-size: 1.3rem; display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+        @media (min-width: 768px) { .header h1 { font-size: 1.6rem; } }
+        .age-box { text-align: center; background: #e8f5e9; padding: 8px 15px; border-radius: 50px; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .age-box input { width: 70px; border: none; background: transparent; font-size: 1.8rem; font-weight: bold; color: #0a2a1e; text-align: center; }
+        .input-section { background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 20px 15px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
+        .section-title { color: #0a2a1e; font-size: 1.3rem; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 3px solid #2d6a4f; }
+        .input-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 20px; }
+        @media (min-width: 480px) { .input-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 900px) { .input-grid { grid-template-columns: repeat(4, 1fr); } }
+        .input-group { display: flex; flex-direction: column; }
+        .input-group label { font-size: 0.9rem; color: #333; margin-bottom: 5px; font-weight: 600; }
+        .input-group input { padding: 14px 12px; border: 2px solid #ddd; border-radius: 12px; font-size: 1rem; background: white; -webkit-appearance: none; }
+        .input-group input:focus { outline: none; border-color: #2d6a4f; box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.2); }
+        .button-group { display: flex; flex-direction: column; gap: 10px; }
+        @media (min-width: 480px) { .button-group { flex-direction: row; justify-content: center; } }
+        .btn { padding: 16px 20px; border: none; border-radius: 50px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s; text-align: center; flex: 1; }
+        .btn-primary { background: linear-gradient(135deg, #0a2a1e, #2d6a4f); color: white; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .btn-secondary { background: #e0e0e0; color: #333; }
+        .results-section { background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 20px 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); margin-bottom: 20px; overflow-x: auto; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.8rem; min-width: 600px; }
+        @media (min-width: 768px) { .comparison-table { font-size: 0.95rem; } }
+        .comparison-table th { background: #0a2a1e; color: white; padding: 12px 8px; text-align: center; white-space: nowrap; }
+        .comparison-table td { padding: 10px 5px; text-align: center; border-bottom: 1px solid #e0e0e0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 20px 0; }
+        @media (min-width: 768px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+        .stat-card { text-align: center; padding: 12px 8px; border-radius: 10px; }
+        .stat-card .label { font-size: 0.8rem; color: #555; margin-bottom: 5px; }
+        .stat-card .value { font-size: 1.5rem; font-weight: bold; }
+        .stat-card .trend { font-size: 0.8rem; margin-top: 5px; }
+        .risk-analysis { background: linear-gradient(135deg, #ffebee, #ffcdd2); border-radius: 15px; padding: 20px 15px; margin-top: 20px; border-right: 5px solid #c62828; }
+        .risk-title { font-size: 1.2rem; color: #b71c1c; margin-bottom: 15px; }
+        .risk-item { padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.1); display: flex; align-items: flex-start; gap: 10px; }
+        .risk-icon { font-size: 1.5rem; }
+        .risk-text { flex: 1; color: #333; line-height: 1.5; font-size: 0.9rem; }
+        .risk-probability { background: rgba(198, 40, 40, 0.15); padding: 4px 10px; border-radius: 20px; font-weight: bold; color: #b71c1c; font-size: 0.9rem; white-space: nowrap; }
+        .footer { text-align: center; color: rgba(255,255,255,0.9); padding: 20px 10px; font-size: 0.9rem; }
+        .status-good { color: #2e7d32; font-weight: bold; }
+        .status-warning { color: #f57c00; font-weight: bold; }
+        .status-danger { color: #c62828; font-weight: bold; }
+        .data-badge { background: #ffd700; color: #0a2a1e; padding: 2px 8px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; }
+        .daily-indicator { background: #e3f2fd; padding: 10px; border-radius: 10px; margin-top: 10px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="designer-signature">
+            <span class="designer-name">🐓 م / عبدالله عزوز - أنظمة ذكاء اصطناعي للدواجن 🐓</span>
+            <span class="designer-contact">📞 01119935714 | 01515166699</span>
+        </div>
+
+        <div class="trend-header">
+            <div class="risk-meter">
+                <span class="risk-label">🦠 مؤشر المرض التراكمي (النافق - الزيادة اليومية - الحرارة - العلف - FCR)</span>
+                <div class="risk-bar-container">
+                    <div class="risk-bar-fill" id="riskBarFill" style="width: 0%;">0%</div>
+                </div>
+                <span class="risk-value" id="riskValue">0%</span>
+            </div>
+            <div class="history-bar">
+                <span style="color: #555; font-size: 0.9rem;">📅 سجل الأيام: </span>
+                <div id="historyButtons" style="display: flex; gap: 5px; flex-wrap: wrap;"></div>
+                <button class="btn btn-secondary" style="padding: 6px 15px; font-size: 0.9rem;" onclick="clearHistory()">🗑️ مسح</button>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>
+                <span class="data-badge">إناث روص 308 - جدول يومي كامل</span>
+                🐔 نظام تحليل ذكي (حرارة - علف - نمو - نافق)
+            </h1>
+            <div class="age-box">
+                <span style="color: #0a2a1e; font-weight: bold;">📅 العمر (يوم): </span>
+                <input type="number" id="age" min="1" max="56" value="30" step="1" inputmode="numeric" onchange="loadDayData()">
+            </div>
+        </div>
+
+        <div class="input-section">
+            <div class="section-title"><span>📝</span> إدخال البيانات اليومية الفعلية</div>
+            <div class="input-grid">
+                <div class="input-group"><label>⚖️ متوسط الوزن الفعلي (جم)</label><input type="number" id="weight" value="1700" step="1" inputmode="decimal" required></div>
+                <div class="input-group"><label>🌾 العلف اليومي (جم/طائر)</label><input type="number" id="feed" value="144" step="0.1" inputmode="decimal" required></div>
+                <div class="input-group"><label>💧 المياه اليومية (مل/طائر)</label><input type="number" id="water" value="250" step="1" inputmode="decimal" required></div>
+                <div class="input-group"><label>🌡️ درجة الحرارة (مئوية)</label><input type="number" id="temp" value="23" step="0.1" inputmode="decimal" required></div>
+                <div class="input-group"><label>💧 الرطوبة النسبية (%)</label><input type="number" id="humidity" value="65" step="0.1" inputmode="decimal" required></div>
+                <div class="input-group"><label>⚰️ النافق اليومي (عدد)</label><input type="number" id="mortalityCount" value="5" inputmode="numeric" required></div>
+                <div class="input-group"><label>🐔 إجمالي الطيور</label><input type="number" id="totalBirds" value="10000" inputmode="numeric" required></div>
+            </div>
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="saveAndAnalyze()"><span>💾</span> حفظ وتحليل اليوم</button>
+                <button class="btn btn-secondary" onclick="loadDayData()"><span>🔄</span> تحميل بيانات اليوم</button>
+            </div>
+        </div>
+
+        <div class="results-section" id="results" style="display: none;">
+            <div class="section-title"><span>📊</span> مقارنة بالأهداف الرسمية (أفياجين - إناث)</div>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table" id="comparisonTable"></table>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card" style="background: #e3f2fd;">
+                    <div class="label">الزيادة اليومية الفعلية</div>
+                    <div class="value" id="dailyGainValue" style="color: #0d47a1;">--</div>
+                    <div class="trend" id="dailyGainTrend"></div>
+                </div>
+                <div class="stat-card" style="background: #e8f5e9;">
+                    <div class="label">نسبة الماء / علف</div>
+                    <div class="value" id="waterFeedRatio" style="color: #2e7d32;">--</div>
+                    <div class="trend" id="waterTrend"></div>
+                </div>
+                <div class="stat-card" style="background: #fff3e0;">
+                    <div class="label">معامل التحويل (FCR)</div>
+                    <div class="value" id="fcrValue" style="color: #e65100;">--</div>
+                    <div class="trend" id="fcrTrend"></div>
+                </div>
+                <div class="stat-card" style="background: #f3e5f5;">
+                    <div class="label">مؤشر الكفاءة (EPEF)</div>
+                    <div class="value" id="epefValue" style="color: #6a1b9a;">--</div>
+                </div>
+            </div>
+
+            <div class="daily-indicator" id="dailyAnalysis"></div>
+            <div class="risk-analysis" id="riskAnalysis"></div>
+        </div>
+        <div class="footer">🐓 تصميم وبرمجة: مهندس عبدالله عزوز | 01119935714 | جميع الحقوق محفوظة 🐓</div>
+    </div>
+
+    <script>
+        // ============================================================
+        // الجدول اليومي الكامل لإناث روص 308 (مصدر: Ross 308 Performance Objectives 2022 - صفحة 6)
+        // ============================================================
+        const FEMALE_DAILY_TARGETS = {
+            0:  { weight: 44,  dailyFeed: 0,   cumFeed: 0,    fcr: 0.000, dailyGain: 0, idealTemp: 32 },
+            1:  { weight: 63,  dailyFeed: 13,  cumFeed: 13,   fcr: 0.211, dailyGain: 19, idealTemp: 32 },
+            2:  { weight: 81,  dailyFeed: 19,  cumFeed: 32,   fcr: 0.375, dailyGain: 18, idealTemp: 31 },
+            3:  { weight: 103, dailyFeed: 21,  cumFeed: 53,   fcr: 0.503, dailyGain: 22, idealTemp: 31 },
+            4:  { weight: 126, dailyFeed: 24,  cumFeed: 77,   fcr: 0.604, dailyGain: 23, idealTemp: 31 },
+            5:  { weight: 152, dailyFeed: 26,  cumFeed: 103,  fcr: 0.684, dailyGain: 26, idealTemp: 31 },
+            6:  { weight: 182, dailyFeed: 29,  cumFeed: 132,  fcr: 0.748, dailyGain: 30, idealTemp: 30 },
+            7:  { weight: 214, dailyFeed: 32,  cumFeed: 164,  fcr: 0.800, dailyGain: 32, idealTemp: 30 },
+            8:  { weight: 249, dailyFeed: 35,  cumFeed: 199,  fcr: 0.843, dailyGain: 35, idealTemp: 30 },
+            9:  { weight: 287, dailyFeed: 38,  cumFeed: 237,  fcr: 0.880, dailyGain: 38, idealTemp: 29 },
+            10: { weight: 328, dailyFeed: 41,  cumFeed: 278,  fcr: 0.911, dailyGain: 41, idealTemp: 29 },
+            11: { weight: 373, dailyFeed: 44,  cumFeed: 322,  fcr: 0.939, dailyGain: 45, idealTemp: 29 },
+            12: { weight: 421, dailyFeed: 48,  cumFeed: 370,  fcr: 0.964, dailyGain: 48, idealTemp: 29 },
+            13: { weight: 471, dailyFeed: 51,  cumFeed: 421,  fcr: 0.987, dailyGain: 50, idealTemp: 28 },
+            14: { weight: 525, dailyFeed: 54,  cumFeed: 475,  fcr: 1.009, dailyGain: 54, idealTemp: 28 },
+            15: { weight: 581, dailyFeed: 57,  cumFeed: 532,  fcr: 1.029, dailyGain: 56, idealTemp: 28 },
+            16: { weight: 641, dailyFeed: 59,  cumFeed: 591,  fcr: 1.049, dailyGain: 60, idealTemp: 27 },
+            17: { weight: 703, dailyFeed: 62,  cumFeed: 653,  fcr: 1.068, dailyGain: 62, idealTemp: 27 },
+            18: { weight: 768, dailyFeed: 65,  cumFeed: 718,  fcr: 1.087, dailyGain: 65, idealTemp: 27 },
+            19: { weight: 836, dailyFeed: 67,  cumFeed: 785,  fcr: 1.105, dailyGain: 68, idealTemp: 27 },
+            20: { weight: 906, dailyFeed: 70,  cumFeed: 855,  fcr: 1.124, dailyGain: 70, idealTemp: 26 },
+            21: { weight: 978, dailyFeed: 72,  cumFeed: 927,  fcr: 1.142, dailyGain: 72, idealTemp: 26 },
+            22: { weight: 1052, dailyFeed: 74, cumFeed: 1001, fcr: 1.161, dailyGain: 74, idealTemp: 26 },
+            23: { weight: 1129, dailyFeed: 76, cumFeed: 1077, fcr: 1.179, dailyGain: 77, idealTemp: 25 },
+            24: { weight: 1207, dailyFeed: 78, cumFeed: 1155, fcr: 1.198, dailyGain: 78, idealTemp: 25 },
+            25: { weight: 1287, dailyFeed: 80, cumFeed: 1235, fcr: 1.217, dailyGain: 80, idealTemp: 25 },
+            26: { weight: 1369, dailyFeed: 82, cumFeed: 1317, fcr: 1.235, dailyGain: 82, idealTemp: 25 },
+            27: { weight: 1452, dailyFeed: 83, cumFeed: 1400, fcr: 1.254, dailyGain: 83, idealTemp: 24 },
+            28: { weight: 1536, dailyFeed: 84, cumFeed: 1484, fcr: 1.273, dailyGain: 84, idealTemp: 24 },
+            29: { weight: 1622, dailyFeed: 85, cumFeed: 1569, fcr: 1.292, dailyGain: 86, idealTemp: 24 },
+            30: { weight: 1708, dailyFeed: 86, cumFeed: 1655, fcr: 1.311, dailyGain: 86, idealTemp: 24 },
+            31: { weight: 1795, dailyFeed: 87, cumFeed: 1742, fcr: 1.331, dailyGain: 87, idealTemp: 23 },
+            32: { weight: 1883, dailyFeed: 88, cumFeed: 1830, fcr: 1.350, dailyGain: 88, idealTemp: 23 },
+            33: { weight: 1972, dailyFeed: 89, cumFeed: 1919, fcr: 1.369, dailyGain: 89, idealTemp: 23 },
+            34: { weight: 2061, dailyFeed: 89, cumFeed: 2008, fcr: 1.389, dailyGain: 89, idealTemp: 23 },
+            35: { weight: 2150, dailyFeed: 89, cumFeed: 2097, fcr: 1.408, dailyGain: 89, idealTemp: 22 },
+            36: { weight: 2240, dailyFeed: 89, cumFeed: 2186, fcr: 1.428, dailyGain: 90, idealTemp: 22 },
+            37: { weight: 2329, dailyFeed: 90, cumFeed: 2276, fcr: 1.447, dailyGain: 89, idealTemp: 22 },
+            38: { weight: 2419, dailyFeed: 89, cumFeed: 2365, fcr: 1.467, dailyGain: 90, idealTemp: 22 },
+            39: { weight: 2508, dailyFeed: 89, cumFeed: 2454, fcr: 1.486, dailyGain: 89, idealTemp: 22 },
+            40: { weight: 2597, dailyFeed: 89, cumFeed: 2543, fcr: 1.506, dailyGain: 89, idealTemp: 22 },
+            41: { weight: 2686, dailyFeed: 89, cumFeed: 2632, fcr: 1.526, dailyGain: 89, idealTemp: 21 },
+            42: { weight: 2774, dailyFeed: 88, cumFeed: 2720, fcr: 1.545, dailyGain: 88, idealTemp: 21 },
+            43: { weight: 2862, dailyFeed: 88, cumFeed: 2808, fcr: 1.565, dailyGain: 88, idealTemp: 21 },
+            44: { weight: 2949, dailyFeed: 87, cumFeed: 2895, fcr: 1.585, dailyGain: 87, idealTemp: 21 },
+            45: { weight: 3035, dailyFeed: 86, cumFeed: 2981, fcr: 1.604, dailyGain: 86, idealTemp: 21 },
+            46: { weight: 3121, dailyFeed: 86, cumFeed: 3067, fcr: 1.624, dailyGain: 86, idealTemp: 21 },
+            47: { weight: 3205, dailyFeed: 85, cumFeed: 3152, fcr: 1.643, dailyGain: 84, idealTemp: 21 },
+            48: { weight: 3289, dailyFeed: 84, cumFeed: 3236, fcr: 1.663, dailyGain: 84, idealTemp: 20 },
+            49: { weight: 3372, dailyFeed: 83, cumFeed: 3319, fcr: 1.683, dailyGain: 83, idealTemp: 20 },
+            50: { weight: 3454, dailyFeed: 82, cumFeed: 3401, fcr: 1.702, dailyGain: 82, idealTemp: 20 },
+            51: { weight: 3535, dailyFeed: 81, cumFeed: 3482, fcr: 1.722, dailyGain: 81, idealTemp: 20 },
+            52: { weight: 3614, dailyFeed: 80, cumFeed: 3562, fcr: 1.741, dailyGain: 79, idealTemp: 20 },
+            53: { weight: 3693, dailyFeed: 79, cumFeed: 3641, fcr: 1.761, dailyGain: 79, idealTemp: 20 },
+            54: { weight: 3770, dailyFeed: 77, cumFeed: 3718, fcr: 1.780, dailyGain: 77, idealTemp: 20 },
+            55: { weight: 3847, dailyFeed: 76, cumFeed: 3794, fcr: 1.800, dailyGain: 77, idealTemp: 20 },
+            56: { weight: 3922, dailyFeed: 75, cumFeed: 3869, fcr: 1.819, dailyGain: 75, idealTemp: 20 }
+        };
+
+        const THRESHOLDS = { WATER_FEED_IDEAL: 1.7, HUMIDITY_MIN: 50, HUMIDITY_MAX: 70, MORTALITY_NORMAL: 0.05 };
+        const STORAGE_KEY = 'abdullah_azzoz_intelligent_v6';
+
+        function getDailyTarget(age) {
+            if (age <= 0) return FEMALE_DAILY_TARGETS[0];
+            if (age >= 56) return FEMALE_DAILY_TARGETS[56];
+            if (FEMALE_DAILY_TARGETS[age]) return FEMALE_DAILY_TARGETS[age];
+            
+            const ages = Object.keys(FEMALE_DAILY_TARGETS).map(Number).sort((a,b) => a-b);
+            let lower = ages[0], upper = ages[ages.length-1];
+            for (let i = 0; i < ages.length - 1; i++) {
+                if (age >= ages[i] && age <= ages[i+1]) { lower = ages[i]; upper = ages[i+1]; break; }
+            }
+            
+            const ratio = (age - lower) / (upper - lower);
+            const weight = FEMALE_DAILY_TARGETS[lower].weight + (FEMALE_DAILY_TARGETS[upper].weight - FEMALE_DAILY_TARGETS[lower].weight) * ratio;
+            const cumFeed = FEMALE_DAILY_TARGETS[lower].cumFeed + (FEMALE_DAILY_TARGETS[upper].cumFeed - FEMALE_DAILY_TARGETS[lower].cumFeed) * ratio;
+            const dailyFeed = age > 0 ? cumFeed - getDailyTarget(age-1).cumFeed : 0;
+            const dailyGain = age > 0 ? weight - getDailyTarget(age-1).weight : 0;
+            const fcr = weight > 44 ? (cumFeed / (weight - 44)) : 0;
+            const idealTemp = FEMALE_DAILY_TARGETS[lower].idealTemp + (FEMALE_DAILY_TARGETS[upper].idealTemp - FEMALE_DAILY_TARGETS[lower].idealTemp) * ratio;
+            
+            return { weight, dailyFeed, cumFeed, fcr, dailyGain, idealTemp };
+        }
+
+        function getPreviousWeight(currentAge) {
+            let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+            const prevAge = currentAge - 1;
+            if (history[prevAge]) return history[prevAge].weight;
+            const prevTarget = getDailyTarget(prevAge);
+            return prevTarget.weight;
+        }
+
+        function saveDayData(age, data) {
+            let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+            history[age] = data;
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+            updateHistoryButtons();
+            calculateCumulativeRisk();
+        }
+
+        function loadDayData() {
+            const age = document.getElementById('age').value;
+            let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+            if (history[age]) {
+                const d = history[age];
+                document.getElementById('weight').value = d.weight;
+                document.getElementById('feed').value = d.feed;
+                document.getElementById('water').value = d.water;
+                document.getElementById('temp').value = d.temp;
+                document.getElementById('humidity').value = d.humidity;
+                document.getElementById('mortalityCount').value = d.mortality;
+                document.getElementById('totalBirds').value = d.total;
+            }
+            analyzeData();
+        }
+
+        function updateHistoryButtons() {
+            let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+            const ages = Object.keys(history).sort((a,b) => a-b);
+            const container = document.getElementById('historyButtons');
+            container.innerHTML = '';
+            ages.forEach(age => {
+                const btn = document.createElement('button');
+                btn.className = 'history-btn';
+                btn.innerHTML = `📆 ${age}`;
+                btn.onclick = () => { document.getElementById('age').value = age; loadDayData(); };
+                container.appendChild(btn);
+            });
+            if (ages.length > 0) {
+                document.getElementById('age').value = ages[ages.length-1];
+                loadDayData();
+            }
+        }
+
+        function clearHistory() {
+            if (confirm('مسح جميع البيانات التاريخية؟')) {
+                localStorage.removeItem(STORAGE_KEY);
+                updateHistoryButtons();
+                document.getElementById('riskBarFill').style.width = '0%';
+                document.getElementById('riskBarFill').textContent = '0%';
+                document.getElementById('riskValue').textContent = '0%';
+                document.getElementById('results').style.display = 'none';
+            }
+        }
+
+        function calculateCumulativeRisk() {
+            let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+            const ages = Object.keys(history).sort((a,b) => a-b);
+            if (ages.length === 0) {
+                document.getElementById('riskValue').textContent = '0%';
+                document.getElementById('riskBarFill').style.width = '0%';
+                return;
+            }
+            
+            let riskScore = 5;
+            const recentAges = ages.slice(-7);
+            const recentData = recentAges.map(a => history[a]);
+            
+            recentData.forEach(d => {
+                // النافق
+                const mortalityRate = (d.mortality / d.total) * 100;
+                const normalRate = THRESHOLDS.MORTALITY_NORMAL;
+                if (mortalityRate > normalRate * 10) riskScore += 50;
+                else if (mortalityRate > normalRate * 5) riskScore += 40;
+                else if (mortalityRate > normalRate * 3) riskScore += 30;
+                else if (mortalityRate > normalRate * 2) riskScore += 20;
+                else if (mortalityRate > normalRate) riskScore += 10;
+                
+                // الحرارة
+                const tempDiff = Math.abs(d.temp - d.idealTemp);
+                if (tempDiff > 5) riskScore += 20;
+                else if (tempDiff > 3) riskScore += 12;
+                else if (tempDiff > 2) riskScore += 8;
+                else if (tempDiff > 1) riskScore += 4;
+            });
+            
+            // الزيادة اليومية
+            for (let i = 1; i < recentData.length; i++) {
+                const actualGain = recentData[i].weight - recentData[i-1].weight;
+                const targetGain = recentData[i].targetGain;
+                if (actualGain < targetGain * 0.5) riskScore += 15;
+                else if (actualGain < targetGain * 0.7) riskScore += 10;
+                else if (actualGain < targetGain * 0.9) riskScore += 5;
+            }
+            
+            // العلف (الأقل من المستهدف خطر)
+            for (let i = 0; i < recentData.length; i++) {
+                const feedRatio = recentData[i].feed / recentData[i].targetFeed;
+                if (feedRatio < 0.7) riskScore += 15;
+                else if (feedRatio < 0.85) riskScore += 8;
+            }
+            
+            // FCR
+            for (let i = 1; i < recentData.length; i++) {
+                if (recentData[i].fcr > recentData[i-1].fcr) riskScore += 5;
+                if (recentData[i].fcr > recentData[i].targetFcr * 1.1) riskScore += 10;
+            }
+            
+            // المياه
+            for (let i = 0; i < recentData.length; i++) {
+                if (recentData[i].waterRatio > 2.0) riskScore += 15;
+                else if (recentData[i].waterRatio > 1.9) riskScore += 8;
+            }
+            
+            riskScore = Math.max(3, Math.min(98, Math.round(riskScore)));
+            
+            document.getElementById('riskValue').textContent = riskScore + '%';
+            document.getElementById('riskBarFill').style.width = riskScore + '%';
+            document.getElementById('riskBarFill').textContent = riskScore + '%';
+            
+            if (riskScore >= 70) document.getElementById('riskBarFill').style.background = 'linear-gradient(90deg, #f44336, #b71c1c)';
+            else if (riskScore >= 40) document.getElementById('riskBarFill').style.background = 'linear-gradient(90deg, #ff9800, #f57c00)';
+            else document.getElementById('riskBarFill').style.background = 'linear-gradient(90deg, #4caf50, #8bc34a)';
+        }
+
+        function analyzeData() {
+            const age = parseInt(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const dailyFeed = parseFloat(document.getElementById('feed').value);
+            const water = parseFloat(document.getElementById('water').value);
+            const temp = parseFloat(document.getElementById('temp').value);
+            const humidity = parseFloat(document.getElementById('humidity').value);
+            const mortalityCount = parseFloat(document.getElementById('mortalityCount').value);
+            const totalBirds = parseFloat(document.getElementById('totalBirds').value);
+
+            const target = getDailyTarget(age);
+            const prevWeight = getPreviousWeight(age);
+            const actualDailyGain = weight - prevWeight;
+            const targetDailyGain = target.dailyGain;
+            const idealTemp = target.idealTemp;
+            
+            const mortalityPct = (mortalityCount / totalBirds) * 100;
+            const actualFCR = weight > 44 ? (target.cumFeed) / (weight - 44) : 0;
+            const waterRatio = water / dailyFeed;
+            
+            // مؤشر الزيادة اليومية
+            let gainScore = (actualDailyGain / targetDailyGain) * 100;
+            gainScore = Math.min(100, Math.max(0, gainScore));
+            
+            // مؤشر الوزن
+            let weightScore = (weight / target.weight) * 100;
+            weightScore = Math.min(100, Math.max(0, weightScore));
+            
+            // مؤشر العلف (الأقل خطر - الأعلى مقبول)
+            let feedScore = 100;
+            const feedRatio = dailyFeed / target.dailyFeed;
+            if (feedRatio < 0.7) feedScore = 30;
+            else if (feedRatio < 0.85) feedScore = 60;
+            else if (feedRatio < 0.95) feedScore = 80;
+            else if (feedRatio > 1.3) feedScore = 70;
+            else if (feedRatio > 1.15) feedScore = 85;
+            
+            // مؤشر FCR
+            let fcrScore = (target.fcr / actualFCR) * 100;
+            fcrScore = Math.min(100, Math.max(0, fcrScore));
+            
+            // مؤشر المياه
+            let waterScore = 100;
+            if (waterRatio > 2.2) waterScore = 20;
+            else if (waterRatio > 2.0) waterScore = 40;
+            else if (waterRatio > 1.9) waterScore = 60;
+            else if (waterRatio > 1.8) waterScore = 80;
+            else if (waterRatio < 1.4) waterScore = 50;
+            else if (waterRatio < 1.5) waterScore = 70;
+            
+            // مؤشر الحرارة (الانحراف في الاتجاهين خطر)
+            const tempDiff = Math.abs(temp - idealTemp);
+            let tempScore = 100;
+            if (tempDiff > 5) tempScore = 20;
+            else if (tempDiff > 4) tempScore = 35;
+            else if (tempDiff > 3) tempScore = 50;
+            else if (tempDiff > 2) tempScore = 70;
+            else if (tempDiff > 1) tempScore = 85;
+            
+            // تعديل درجة الحرارة بالرطوبة
+            if (humidity > THRESHOLDS.HUMIDITY_MAX) tempScore *= 0.7;
+            else if (humidity < THRESHOLDS.HUMIDITY_MIN) tempScore *= 0.8;
+            tempScore = Math.min(100, tempScore);
+            
+            // مؤشر النافق
+            let mortalityScore = 100;
+            const normalMort = THRESHOLDS.MORTALITY_NORMAL;
+            if (mortalityPct > normalMort * 5) mortalityScore = 10;
+            else if (mortalityPct > normalMort * 3) mortalityScore = 25;
+            else if (mortalityPct > normalMort * 2) mortalityScore = 40;
+            else if (mortalityPct > normalMort) mortalityScore = 60;
+            else if (mortalityPct > normalMort * 0.5) mortalityScore = 80;
+            
+            const livability = 100 - mortalityPct;
+            const epef = (livability * weight / (age * actualFCR)).toFixed(1);
+            
+            document.getElementById('results').style.display = 'block';
+            
+            let tableHtml = `<tr><th>المؤشر</th><th>القيمة الفعلية</th><th>المستهدف</th><th>نسبة التطابق</th><th>الحالة</th></tr>`;
+            
+            const addRow = (name, actual, targetVal, score, unit = '') => {
+                let statusClass = score >= 80 ? 'status-good' : score >= 60 ? 'status-warning' : 'status-danger';
+                let statusText = score >= 80 ? '✓ ممتاز' : score >= 60 ? '⚠️ مقبول' : '❌ خطر';
+                tableHtml += `<tr><td>${name}</td><td>${typeof actual === 'number' ? actual.toFixed(1) : actual}${unit}</td><td>${targetVal.toFixed(1)}${unit}</td><td>${Math.round(score)}%</td><td class="${statusClass}">${statusText}</td></tr>`;
+            };
+            
+            addRow('الوزن الحي', weight, target.weight, weightScore, ' جم');
+            addRow('الزيادة اليومية', actualDailyGain, targetDailyGain, gainScore, ' جم');
+            addRow('العلف اليومي', dailyFeed, target.dailyFeed, feedScore, ' جم');
+            addRow('معامل التحويل (FCR)', actualFCR, target.fcr, fcrScore, '');
+            addRow('درجة الحرارة', temp, idealTemp, tempScore, ' °م');
+            addRow('نسبة الماء/علف', waterRatio, THRESHOLDS.WATER_FEED_IDEAL, waterScore, '');
+            addRow('النافق اليومي', mortalityPct.toFixed(3), normalMort, mortalityScore, ' %');
+            
+            document.getElementById('comparisonTable').innerHTML = tableHtml;
+            document.getElementById('dailyGainValue').textContent = actualDailyGain.toFixed(1) + ' / ' + targetDailyGain.toFixed(1);
+            document.getElementById('waterFeedRatio').textContent = waterRatio.toFixed(2);
+            document.getElementById('fcrValue').textContent = actualFCR.toFixed(3);
+            document.getElementById('epefValue').textContent = epef;
+            
+            // تحليل يومي
+            let dailyHtml = '';
+            if (actualDailyGain < targetDailyGain * 0.7) dailyHtml += '🔴 الزيادة اليومية أقل من المستهدف بكثير! ';
+            else if (actualDailyGain < targetDailyGain * 0.9) dailyHtml += '🟡 الزيادة اليومية أقل من المستهدف. ';
+            else dailyHtml += '🟢 الزيادة اليومية ممتازة. ';
+            
+            if (feedRatio < 0.85) dailyHtml += '🔴 العلف أقل من المستهدف بكثير - خطر! ';
+            else if (feedRatio < 0.95) dailyHtml += '🟡 العلف أقل من المستهدف. ';
+            
+            if (tempDiff > 3) dailyHtml += `🔴 الحرارة ${temp > idealTemp ? 'أعلى' : 'أقل'} من المثالية بـ ${tempDiff.toFixed(1)}°م! `;
+            else if (tempDiff > 2) dailyHtml += `🟡 الحرارة ${temp > idealTemp ? 'أعلى' : 'أقل'} من المثالية بـ ${tempDiff.toFixed(1)}°م. `;
+            
+            if (mortalityScore < 50) dailyHtml += '🔴 النافق مرتفع جداً! ';
+            else if (mortalityScore < 80) dailyHtml += '🟡 النافق أعلى من الطبيعي. ';
+            
+            if (waterRatio > 2.0) dailyHtml += '🔴 استهلاك مياه مرتفع جداً!';
+            
+            document.getElementById('dailyAnalysis').innerHTML = dailyHtml;
+            
+            // تحليل المخاطر
+            let risks = [];
+            if (mortalityScore < 30) risks.push({ icon: '⚰️', text: `النافق مرتفع جداً (${mortalityPct.toFixed(2)}%) - تحقيق فوري`, prob: 98 });
+            else if (mortalityScore < 60) risks.push({ icon: '⚰️', text: `النافق أعلى من الطبيعي (${mortalityPct.toFixed(2)}%)`, prob: 80 });
+            
+            if (actualDailyGain < targetDailyGain * 0.5) risks.push({ icon: '📉', text: `توقف النمو! الزيادة ${actualDailyGain.toFixed(0)} جم (المستهدف ${targetDailyGain.toFixed(0)} جم)`, prob: 95 });
+            else if (actualDailyGain < targetDailyGain * 0.75) risks.push({ icon: '📉', text: `ضعف النمو - الزيادة ${actualDailyGain.toFixed(0)} جم (المستهدف ${targetDailyGain.toFixed(0)} جم)`, prob: 75 });
+            
+            if (feedRatio < 0.7) risks.push({ icon: '🍽️', text: `انخفاض حاد في العلف (${dailyFeed.toFixed(0)} جم - المستهدف ${target.dailyFeed.toFixed(0)} جم) - مرض نشط`, prob: 90 });
+            else if (feedRatio < 0.85) risks.push({ icon: '🍽️', text: `انخفاض في العلف (${dailyFeed.toFixed(0)} جم - المستهدف ${target.dailyFeed.toFixed(0)} جم)`, prob: 70 });
+            
+            if (tempDiff > 4) risks.push({ icon: '🌡️', text: `الحرارة ${temp > idealTemp ? 'أعلى' : 'أقل'} من المثالية بـ ${tempDiff.toFixed(1)}°م - إجهاد حراري`, prob: 85 });
+            else if (tempDiff > 3) risks.push({ icon: '🌡️', text: `انحراف في الحرارة (${tempDiff.toFixed(1)}°م ${temp > idealTemp ? 'أعلى' : 'أقل'} من المثالية)`, prob: 65 });
+            
+            if (waterRatio > 2.0) risks.push({ icon: '💧', text: 'ارتفاع استهلاك المياه - إجهاد حراري أو التهاب معوي', prob: 85 });
+            if (fcrScore < 70) risks.push({ icon: '📊', text: 'سوء تحويل العلف - FCR أعلى من المستهدف', prob: 80 });
+            
+            let riskHtml = `<div class="risk-title"><span>🏥</span> تحليل المخاطر والتنبؤات (اليوم ${age})</div>`;
+            if (risks.length === 0) riskHtml += `<div class="risk-item"><span class="risk-icon">✅</span><span class="risk-text">جميع المؤشرات ممتازة - استمر في الإدارة الحالية</span></div>`;
+            else {
+                risks.sort((a,b) => b.prob - a.prob);
+                risks.slice(0, 5).forEach(r => {
+                    riskHtml += `<div class="risk-item"><span class="risk-icon">${r.icon}</span><span class="risk-text">${r.text}</span><span class="risk-probability">${r.prob}%</span></div>`;
+                });
+            }
+            document.getElementById('riskAnalysis').innerHTML = riskHtml;
+            
+            // اتجاهات
+            let history = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+            const historyArray = Object.keys(history).sort((a,b)=>a-b).map(k => history[k]);
+            
+            let fcrTrendText = '➖ مستقر', waterTrendText = '➖ مستقر', gainTrendText = '➖ مستقر';
+            if (historyArray.length >= 2) {
+                const last = historyArray[historyArray.length-1];
+                const prev = historyArray[historyArray.length-2];
+                fcrTrendText = last.fcr > prev.fcr ? '🔴 يرتفع' : (last.fcr < prev.fcr ? '🟢 ينخفض' : '➖ مستقر');
+                waterTrendText = last.waterRatio > prev.waterRatio ? '🔴 يرتفع' : (last.waterRatio < prev.waterRatio ? '🟢 ينخفض' : '➖ مستقر');
+                
+                const lastGain = last.weight - prev.weight;
+                const prevGain = historyArray.length >= 3 ? prev.weight - historyArray[historyArray.length-3].weight : lastGain;
+                gainTrendText = lastGain < prevGain ? '🔴 يقل' : (lastGain > prevGain ? '🟢 يزيد' : '➖ مستقر');
+            }
+            
+            document.getElementById('fcrTrend').innerHTML = fcrTrendText;
+            document.getElementById('waterTrend').innerHTML = waterTrendText;
+            document.getElementById('dailyGainTrend').innerHTML = gainTrendText;
+        }
+
+        function saveAndAnalyze() {
+            const age = document.getElementById('age').value;
+            const weightVal = parseFloat(document.getElementById('weight').value);
+            const feedVal = parseFloat(document.getElementById('feed').value);
+            const target = getDailyTarget(parseInt(age));
+            
+            const data = {
+                weight: weightVal,
+                feed: feedVal,
+                water: parseFloat(document.getElementById('water').value),
+                temp: parseFloat(document.getElementById('temp').value),
+                humidity: parseFloat(document.getElementById('humidity').value),
+                mortality: parseFloat(document.getElementById('mortalityCount').value),
+                total: parseFloat(document.getElementById('totalBirds').value),
+                fcr: weightVal > 44 ? (target.cumFeed / (weightVal - 44)) : 0,
+                waterRatio: parseFloat(document.getElementById('water').value) / feedVal,
+                targetGain: target.dailyGain,
+                targetFcr: target.fcr,
+                targetFeed: target.dailyFeed,
+                idealTemp: target.idealTemp
+            };
+            
+            saveDayData(age, data);
+            analyzeData();
+            alert(`✅ تم حفظ بيانات اليوم ${age}\nالمؤشر التراكمي: ${document.getElementById('riskValue').textContent}`);
+        }
+
+        window.onload = function() {
+            updateHistoryButtons();
+            if (Object.keys(JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}).length === 0) {
+                analyzeData();
+            }
+        };
+    </script>
+</body>
+</html>
